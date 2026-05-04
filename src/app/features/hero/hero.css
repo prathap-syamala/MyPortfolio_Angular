@@ -1,0 +1,152 @@
+/* Cube Container */
+.cube-container {
+  width: 420px;
+  height: 420px;
+  perspective: 1400px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Cube */
+.cube {
+  position: relative;
+  width: 320px;
+  height: 320px;
+
+  transform-style: preserve-3d;
+
+  animation: rotateCube 32s infinite ease-in-out;
+}
+
+/* All Faces */
+.cube-face {
+  position: absolute;
+
+  width: 320px;
+  height: 320px;
+
+  overflow: hidden;
+
+  border-radius: 28px;
+
+  border: 2px solid #334155;
+
+  background: #0f172a;
+
+  box-shadow:
+    0 0 40px rgba(0, 0, 0, 0.5),
+    0 0 20px rgba(16, 185, 129, 0.12);
+
+  backdrop-filter: blur(8px);
+}
+
+/* Images */
+.cube-face img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+/* Front */
+.front {
+  transform: translateZ(160px);
+}
+
+/* Back */
+.back {
+  transform: rotateY(180deg) translateZ(160px);
+}
+
+/* Right */
+.right {
+  transform: rotateY(90deg) translateZ(160px);
+}
+
+/* Left */
+.left {
+  transform: rotateY(-90deg) translateZ(160px);
+}
+
+/* Top */
+.top {
+  transform: rotateX(90deg) translateZ(160px);
+}
+
+/* Bottom */
+.bottom {
+  transform: rotateX(-90deg) translateZ(160px);
+}
+
+.cube {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  transform-style: preserve-3d;
+  animation: rotateCube 36s infinite ease-in-out;
+}
+
+@keyframes rotateCube {
+
+  /* Front */
+  0% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+
+  10% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+
+  /* Right */
+  16% {
+    transform: rotateY(-90deg);
+  }
+
+  26% {
+    transform: rotateY(-90deg);
+  }
+
+  /* Back */
+  32% {
+    transform: rotateY(-180deg);
+  }
+
+  42% {
+    transform: rotateY(-180deg);
+  }
+
+  /* Left */
+  48% {
+    transform: rotateY(-270deg);
+  }
+
+  58% {
+    transform: rotateY(-270deg);
+  }
+
+  /* Top */
+  64% {
+    transform: rotateX(-90deg);
+  }
+
+  74% {
+    transform: rotateX(-90deg);
+  }
+
+  /* Bottom */
+  80% {
+    transform: rotateX(90deg);
+  }
+
+  90% {
+    transform: rotateX(90deg);
+  }
+
+  /* Reset */
+  100% {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+
+}

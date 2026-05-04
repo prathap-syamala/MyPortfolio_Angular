@@ -1,3 +1,12 @@
 import { Routes } from '@angular/router';
 
-export const routes: Routes = [];
+import { ProductManagement } from './features/page/product-management/product-management';
+
+export const routes: Routes = [
+
+  {
+    path: 'product-management',
+    component: ProductManagement
+  }
+
+];

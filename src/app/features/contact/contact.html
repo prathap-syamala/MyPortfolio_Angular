@@ -1,0 +1,214 @@
+<section
+  id="contact"
+  class="min-h-screen bg-slate-950 text-slate-100 px-10 md:px-24 py-24 flex items-center">
+
+  <div
+    class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center w-full">
+
+    <!-- Left Content -->
+    <div>
+
+      <!-- Heading -->
+      <h1 class="text-6xl font-extrabold leading-tight">
+
+        Let’s Build Something
+
+        <span class="text-emerald-400">
+          Amazing
+        </span>
+
+      </h1>
+
+      <!-- Description -->
+      <p class="text-slate-400 text-lg leading-9 mt-10 max-w-2xl">
+
+        I’m open to .NET Full Stack Developer opportunities,
+        enterprise application development, backend engineering,
+        and real-world software projects.
+
+        Feel free to connect for collaborations,
+        internships, freelance work, or technical discussions.
+
+      </p>
+
+      <!-- Contact Cards -->
+      <div class="space-y-6 mt-14">
+
+        <!-- Email -->
+        <div
+          class="flex items-center gap-5 bg-slate-900 border border-slate-800 rounded-2xl p-6">
+
+          <div
+            class="w-14 h-14 rounded-full bg-emerald-500/20
+            flex items-center justify-center text-2xl">
+
+            ✉
+
+          </div>
+
+          <div>
+
+            <p class="text-slate-400 text-sm">
+              Email
+            </p>
+
+            <a
+              href="mailto:prathapsyamala03@gmail.com"
+              class="text-lg font-semibold hover:text-emerald-400 transition">
+
+              prathapsyamala03@gmail.com
+
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- LinkedIn -->
+        <div
+          class="flex items-center gap-5 bg-slate-900 border border-slate-800 rounded-2xl p-6">
+
+          <div
+            class="w-14 h-14 rounded-full bg-emerald-500/20
+            flex items-center justify-center text-2xl">
+
+            in
+
+          </div>
+
+          <div>
+
+            <p class="text-slate-400 text-sm">
+              LinkedIn
+            </p>
+
+            <a
+              href="https://www.linkedin.com/in/prathap-reddy-syamala"
+              target="_blank"
+              class="text-lg font-semibold hover:text-emerald-400 transition">
+
+              linkedin.com/in/prathap-reddy-syamala
+
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- GitHub -->
+        <div
+          class="flex items-center gap-5 bg-slate-900 border border-slate-800 rounded-2xl p-6">
+
+          <div
+            class="w-14 h-14 rounded-full bg-emerald-500/20
+            flex items-center justify-center text-2xl">
+
+            ⌘
+
+          </div>
+
+          <div>
+
+            <p class="text-slate-400 text-sm">
+              GitHub
+            </p>
+
+            <a
+              href="https://github.com/prathap-syamala"
+              target="_blank"
+              class="text-lg font-semibold hover:text-emerald-400 transition">
+
+              github.com/prathap-syamala
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Right Form -->
+    <div
+      class="bg-slate-900 border border-slate-800 rounded-3xl p-10 shadow-2xl">
+
+      <!-- Form Heading -->
+      <h2 class="text-4xl font-bold">
+        Get In Touch
+      </h2>
+
+      <p class="text-slate-400 mt-5 leading-8">
+        Send your message and I’ll get back to you soon.
+      </p>
+
+      <!-- Contact Form -->
+      <form
+        (ngSubmit)="sendEmail()"
+        class="space-y-8 mt-12">
+
+        <!-- Name -->
+        <div>
+
+          <label class="text-slate-300 text-sm">
+            Full Name
+          </label>
+
+          <input
+            type="text"
+            name="name"
+            [(ngModel)]="name"
+            placeholder="Enter your name"
+            class="w-full mt-3 bg-slate-950 border border-slate-700 rounded-2xl px-5 py-4 outline-none focus:border-emerald-400 transition" />
+
+        </div>
+
+        <!-- Email -->
+        <div>
+
+          <label class="text-slate-300 text-sm">
+            Email Address
+          </label>
+
+          <input
+            type="email"
+            name="email"
+            [(ngModel)]="email"
+            placeholder="Enter your email"
+            class="w-full mt-3 bg-slate-950 border border-slate-700 rounded-2xl px-5 py-4 outline-none focus:border-emerald-400 transition" />
+
+        </div>
+
+        <!-- Message -->
+        <div>
+
+          <label class="text-slate-300 text-sm">
+            Message
+          </label>
+
+          <textarea
+            rows="6"
+            name="message"
+            [(ngModel)]="message"
+            placeholder="Write your message..."
+            class="w-full mt-3 bg-slate-950 border border-slate-700 rounded-2xl px-5 py-4 outline-none focus:border-emerald-400 transition resize-none"></textarea>
+
+        </div>
+
+        <!-- Button -->
+        <button
+          type="submit"
+          class="w-full bg-emerald-500 hover:bg-emerald-600 transition py-4 rounded-2xl font-semibold text-lg shadow-xl">
+
+          Send Message
+
+        </button>
+
+      </form>
+
+    </div>
+
+  </div>
+
+</section>

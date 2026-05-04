@@ -1,0 +1,70 @@
+<section id="projects" class="min-h-screen bg-slate-900 text-slate-100 px-16 py-24">
+  <!-- Heading -->
+  <div class="mb-16">
+    <h2 class="text-5xl font-extrabold">Projects</h2>
+
+    <p class="text-slate-400 text-lg mt-5 max-w-3xl leading-8">
+      Real-world applications focused on scalable backend systems, authentication, enterprise
+      architecture, and full-stack development.
+    </p>
+  </div>
+
+  <!-- Project Card -->
+  <div
+    class="bg-slate-800 border border-slate-700 rounded-3xl p-10 hover:border-emerald-500 transition duration-300"
+  >
+    <!-- Project Title -->
+    <h3 class="text-3xl font-bold">Product Management System</h3>
+
+    <!-- Tech Stack -->
+    <p class="text-emerald-400 font-medium mt-4">ASP.NET Core • React.js • SQL Server • EF Core</p>
+
+    <!-- Brief Description -->
+    <p class="text-slate-300 leading-8 mt-8 text-lg">
+      Developed a scalable full-stack application using ASP.NET Core Web API and React.js with JWT
+      authentication, role-based authorization, RESTful APIs, approval-based workflows, and dynamic
+      dashboards.
+    </p>
+
+    <!-- View Details -->
+    <div class="mt-10">
+      <button
+        (click)="openModal()"
+        class="bg-emerald-500 hover:bg-emerald-600 transition px-6 py-3 rounded-xl font-semibold inline-block"
+      >
+        View Details
+      </button>
+    </div>
+  </div>
+  <!-- Floating Modal -->
+  <div
+    *ngIf="showModal"
+    class="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-50"
+  >
+    <!-- Modal Box -->
+    <div
+      class="bg-slate-900 border border-slate-700 rounded-3xl w-[90%] max-w-6xl h-[90vh] overflow-y-auto relative p-10"
+    >
+      <!-- Close Button -->
+      <button
+  (click)="closeModal()"
+  class="fixed top-6 right-6 z-[999]
+  w-11 h-11 rounded-full
+  bg-slate-800/90 backdrop-blur-md
+  border border-slate-700
+  flex items-center justify-center
+  text-white text-2xl
+  shadow-xl
+  hover:bg-emerald-500
+  hover:scale-110
+  transition duration-300">
+
+  ×
+
+</button>
+
+      <!-- External HTML Component -->
+      <app-product-management> </app-product-management>
+    </div>
+  </div>
+</section>
